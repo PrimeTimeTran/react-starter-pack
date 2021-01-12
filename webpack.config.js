@@ -91,16 +91,6 @@ module.exports = (env) => {
       filename: 'bundle.js',
     },
     plugins: [
-      // new CopyPlugin([
-      //   {
-      //     from: path.resolve(__dirname, '../static'),
-      //     to: config.build.assetsSubDirectory,
-      //     ignore: ['.*'],
-      //   },
-      // ]),
-      new CopyPlugin({
-        patterns: [{ from: '_redirects', to: 'public/_redirects' }],
-      }),
       new HtmlWebpackPlugin({
         template: path.join(__dirname, 'public', 'index.html'),
       }),
