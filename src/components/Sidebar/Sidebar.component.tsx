@@ -4,6 +4,7 @@ import DashboardRounded from '@material-ui/icons/DashboardRounded';
 import FormatListBulleted from '@material-ui/icons/FormatListBulleted';
 import Transform from '@material-ui/icons/Transform';
 import Fingerprint from '@material-ui/icons/Fingerprint';
+import ListIcon from '@material-ui/icons/List';
 import { routes } from 'utils/routes';
 import { NavLink } from 'react-router-dom';
 import { i18n } from 'utils/lib/i18n';
@@ -38,6 +39,7 @@ export class Sidebar extends Component<{}> {
     const list = <FormatListBulleted />;
     const styleguide = <Transform />;
     const finger = <Fingerprint />;
+    const listIcon = <ListIcon />;
 
     return (
       <>
@@ -62,6 +64,11 @@ export class Sidebar extends Component<{}> {
               icons={finger}
               translationKey={i18n.t('sidebar.algorithm')}
               link={routes.algorithm}
+            />
+            <RenderListItem
+              icons={listIcon}
+              translationKey={i18n.t('sidebar.todo')}
+              link={routes.todos}
             />
           </List>
         </Drawer>

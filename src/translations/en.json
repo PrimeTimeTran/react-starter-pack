@@ -1,6 +1,6 @@
 {
   "general": {
-    "title": "RTW Template",
+    "title": "ToolsForProductivity",
     "description": "Boilerplate : React - Typescript - Webpack",
     "search": "Search...",
     "language": {
@@ -13,7 +13,8 @@
     "employees": "Employees",
     "styleguide": "Styleguide",
     "listing": "Listing",
-    "algorithm": "Algorithm"
+    "algorithm": "Algorithm",
+    "todo": "Todos"
   },
   "employees": {
     "title": "RTW - Employee list",

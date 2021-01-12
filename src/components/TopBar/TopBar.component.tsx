@@ -21,14 +21,6 @@ export class TopBar extends Component<{}> {
       <>
         <AppBar position="fixed">
           <Toolbar>
-            {/* <IconButton
-              edge="start"
-              className="menuButton"
-              color="inherit"
-              aria-label="open drawer"
-            >
-              <MenuIcon />
-            </IconButton> */}
             <Typography className="title" variant="h6" noWrap>
               {i18n.t('general.title')}
             </Typography>
@@ -37,8 +29,8 @@ export class TopBar extends Component<{}> {
                 <SearchIcon />
               </div>
               <InputBase
-                placeholder={i18n.t('general.search') + 'Loiiii'}
                 className="input-wrapper"
+                placeholder={i18n.t('general.search')}
                 inputProps={{ 'aria-label': 'search' }}
               />
             </div>
@@ -49,8 +41,8 @@ export class TopBar extends Component<{}> {
                 </Badge>
               </IconButton>
               <IconButton
-                aria-label="show 17 new notifications"
                 color="inherit"
+                aria-label="show 17 new notifications"
               >
                 <Badge badgeContent={17} color="secondary">
                   <NotificationsIcon />
@@ -58,12 +50,12 @@ export class TopBar extends Component<{}> {
               </IconButton>
               <IconButton
                 edge="end"
-                aria-label="account of current user"
+                color="inherit"
                 aria-haspopup="true"
+                aria-label="account of current user"
                 onClick={() => {
                   return;
                 }}
-                color="inherit"
               >
                 <AccountCircle />
               </IconButton>

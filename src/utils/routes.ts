@@ -4,5 +4,6 @@ export const routes = {
   product: '/product',
   employee: '/employee',
   styleguide: '/styleguide',
-  algorithm: '/algorithm'
+  algorithm: '/algorithm',
+  todos: '/todos'
 };
